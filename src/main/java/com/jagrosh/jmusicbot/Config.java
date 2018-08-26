@@ -59,13 +59,13 @@ public class Config
                 String value = parts.length>1 ? parts[1].trim() : null;
                 switch(key)
                 {
-                    case "token":
-                        token = value;
+                    case "process.env.BOT_TOKEN":
+                        BOT_TOKEN = value;
                         break;
-                    case "prefix":
+                    case "!":
                         prefix = value;
                         break;
-                    case "altprefix":
+                    case "!!":
                         altprefix = value;
                         break;
                     case "owner":
